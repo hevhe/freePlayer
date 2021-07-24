@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@drawable/mainBackGround"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="MV    (建设中)"
+            android:textColor="@drawable/black"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="15dp"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="我的歌单"
+            android:layout_height="wrap_content"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_alignParentRight="true"
+            android:layout_height="wrap_content">
+            <ImageButton
+                android:layout_width="15dp"
+                android:src="@drawable/play_g"
+                android:scaleType="fitCenter"
+                android:background="@drawable/transparent"
+                android:layout_height="15dp"/>
+            <ImageButton
+                android:layout_width="15dp"
+                android:layout_marginLeft="5dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/add_g"
+                android:background="@drawable/transparent"
+                android:layout_height="15dp"/>
+            <ImageButton
+                android:layout_width="15dp"
+                android:scaleType="fitCenter"
+                android:layout_marginLeft="5dp"
+                android:src="@drawable/delete"
+                android:background="@drawable/transparent"
+                android:layout_height="15dp"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+    <include layout="@layout/play_list_song_list_recycle_view"/>
+
+    <RelativeLayout
+        android:id="@+id/play_list_fragment_detail_toolbar"
+        android:layout_width="match_parent"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp"
+        android:visibility="invisible"
+        android:layout_marginLeft="15dp"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="歌曲列表"
+            android:layout_height="wrap_content"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_alignParentRight="true"
+            android:layout_height="wrap_content">
+            <ImageButton
+                android:layout_width="15dp"
+                android:src="@drawable/add_but"
+                android:scaleType="fitCenter"
+                android:background="@drawable/transparent"
+                android:layout_height="15dp"/>
+            <ImageButton
+                android:layout_width="15dp"
+                android:layout_marginLeft="5dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/add_but"
+                android:background="@drawable/transparent"
+                android:layout_height="15dp"/>
+            <ImageButton
+                android:layout_width="15dp"
+                android:scaleType="fitCenter"
+                android:layout_marginLeft="5dp"
+                android:src="@drawable/delete"
+                android:background="@drawable/transparent"
+                android:layout_height="15dp"/>
+
+    </LinearLayout>
+    </RelativeLayout>
+
+    <include layout="@layout/play_list_song_list_detail_recycle_view"/>
+
+</LinearLayout>

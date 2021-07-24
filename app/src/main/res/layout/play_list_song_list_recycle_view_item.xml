@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:padding="5dp"
+    android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="120dp"
+            android:layout_height="120dp">
+
+                <myView.RoundImageView
+                    android:id="@+id/play_list_song_list_recycle_view_item_but"
+                    android:layout_width="110dp"
+                    android:layout_centerInParent="true"
+                    android:scaleType="fitCenter"
+                    android:background="@drawable/transparent"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/music"
+                    android:layout_height="110dp"/>
+
+
+                <ImageButton
+                    android:id="@+id/recycle_view_item_play_but"
+                    android:layout_width="40dp"
+                    android:src="@drawable/play_g"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentBottom="true"
+                    android:scaleType="fitCenter"
+                    android:layout_height="30dp"/>
+
+        </RelativeLayout>
+
+
+
+        <TextView
+            android:id="@+id/play_list_song_list_recycle_view_item_text"
+            android:layout_width="120dp"
+            android:layout_marginTop="5dp"
+            android:textSize="10sp"
+            android:layout_gravity="center"
+            android:text="周杰伦周杰伦周杰伦周杰伦周杰伦周"
+            android:layout_height="wrap_content"/>
+
+
+
+
+</LinearLayout>

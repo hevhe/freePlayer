@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@drawable/transparent"
+    android:layout_marginTop="5dp"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_height="wrap_content">
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/search_fragment_search_name_text"
+                android:layout_width="0dp"
+                android:layout_weight="8"
+                android:paddingLeft="5dp"
+                android:hint="请输入关键字"
+                android:imeOptions="actionSearch"
+                android:singleLine="true"
+                android:background="@drawable/et_shape"
+                android:layout_height="30dp"/>
+
+            <ImageButton
+                android:id="@+id/search_fragment_search_but"
+                android:layout_width="0dp"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:src="@drawable/search_but"
+                android:background="@drawable/transparent"
+                android:scaleType="fitCenter"
+                android:layout_height="30dp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/search_fragment_search_song_list_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        </androidx.recyclerview.widget.RecyclerView>
+
+        <LinearLayout
+            android:id="@+id/search_song_fragment_dialog_layout"
+            android:layout_width="wrap_content"
+            android:visibility="gone"
+            android:layout_centerInParent="true"
+            android:layout_height="wrap_content">
+            <ProgressBar
+                android:layout_width="40dp"
+                android:layout_height="40dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:textSize="15sp"
+                android:gravity="center_vertical"
+                android:text="数据加载中！！！"
+                android:layout_height="40dp"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+</LinearLayout>

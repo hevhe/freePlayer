@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:padding="5dp"
+    android:id="@+id/search_fragment_song_list_play_but"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:layout_marginLeft="10dp"
+        android:padding="3dp"
+        android:orientation="vertical"
+        android:layout_weight="11">
+
+        <TextView
+            android:id="@+id/search_fragment_song_list_item_song_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:focusable="false"
+            android:gravity="center_vertical"
+            android:text="TextView"
+            android:textSize="15sp" />
+        <TextView
+            android:id="@+id/search_fragment_song_list_item_singer_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:focusable="false"
+            android:gravity="center_vertical"
+            android:text="12"
+            android:textColor="@drawable/gray"
+            android:textSize="10sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_weight="1"
+        android:layout_height="40dp">
+
+        <ImageButton
+            android:layout_width="25dp"
+            android:id="@+id/search_fragment_song_list_love_but"
+            android:layout_height="25dp"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:background="@drawable/transparent"
+            android:focusable="false"
+            android:scaleType="fitCenter"
+            android:src="@drawable/list_love"
+            android:textColor="@drawable/white"/>
+
+        <ImageButton
+            android:id="@+id/search_fragment_song_list_add_but"
+            android:src="@drawable/add_g"
+            android:layout_marginLeft="10dp"
+            android:layout_width="25dp"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:background="@drawable/transparent"
+            android:scaleType="fitCenter"
+            android:layout_height="25dp"/>
+        <ImageButton
+            android:id="@+id/search_fragment_song_list_download_but"
+            android:src="@drawable/download1"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/transparent"
+            android:layout_width="25dp"
+            android:scaleType="fitCenter"
+            android:layout_height="25dp"/>
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>
